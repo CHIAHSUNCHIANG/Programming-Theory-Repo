@@ -8,16 +8,17 @@ public class MenuUIHandler : MonoBehaviour
 {
     public InputField playername;
 
-    public void StartNew()
+
+    public void StartSelectScene()
     {
         if (playername.text != "")
-        {
+        {            
             SceneManager.LoadScene(1);
             MainManager.playernamestr = playername.text;
         }
         else
         {
-            Debug.Log("Enter name");
+            Debug.Log("Enter Name");
         }
     }
 
@@ -27,9 +28,10 @@ public class MenuUIHandler : MonoBehaviour
         Debug.Log("Success LoadScene2");
     }
 
-    public void StartName()
+    public void BackToLastScene()
     {
-        SceneManager.LoadScene(0);
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentScene - 1);
         Debug.Log("Success Back to Name Scene");
     }
     

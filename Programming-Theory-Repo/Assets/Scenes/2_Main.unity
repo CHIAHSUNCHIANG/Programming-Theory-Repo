@@ -907,7 +907,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4274813697098343078}
         m_TargetAssemblyTypeName: MenuUIHandler, Assembly-CSharp
-        m_MethodName: StartSelect
+        m_MethodName: BackToLastScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

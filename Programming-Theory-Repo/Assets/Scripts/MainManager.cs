@@ -4,14 +4,22 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.IO;
+using UnityEngine.UI;
 
 public class MainManager : MonoBehaviour
 {
     public Text playerName;
     public static string playernamestr;
 
-    void Start() 
+    // Start is called before the first frame update
+    void Start()
     {
-        playerName.text = playernamestr;
+        playerName.text = playernamestr ;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }
